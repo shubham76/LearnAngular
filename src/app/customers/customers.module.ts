@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common'
 import { CustomersComponent } from './customers.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { FilterTextboxComponent } from './customers-list/filter-textbox.component'
+import { CustomersRoutingModule } from './customers-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FilterTextboxComponent } from './customers-list/filter-textbox.componen
   imports: [
     CommonModule,
     SharedModule,
-    FormsModule 
+    FormsModule,
+    CustomersRoutingModule 
   ],
   exports: [CustomersComponent],
 })
